@@ -1,13 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="imakge/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>E-Commerce G25</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <nav>
+      <img src="./images/logo_nombre.png" alt="logo_nombre">
+      <button class="car__toggle">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- Panel Carrito de Compras -->
+      <div class="car__block" id="car">
+        <div id="car__list">
+          
+        </div>
+        <button class="empty__button" id="empty__cart">Empty cart</button>
+      </div>
+    </nav>
+    <header>
+      <img src="./images/logo blanco.png" alt="logo_header">
+    </header>
+    <main>
+      
+      <h3>Todos nuestros productos</h3>
+      <!-- Lista de productos -->
+      <div id="products-container" class="principal__container">
+        
+      </div>
+      <!-- Modal -->
+    
+      <div id="modal-container" class="modal__container__element">
+        <div class="icon">
+          <i class="fa-solid fa-x icon__modal"></i>
+        </div>
+        
+        <div id="modal" class="modal__element ">
+              
+
+           <div class="modal__product">
+
+            <div class="modal_descript">
+                <h2>Camiseta de manga corta con cuello redondo</h2>
+                
+                <p>$ 10.00</p>
+                
+            </div>
+
+            <div class="modal_image">
+              <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png">
+            </div>
+          </div>
+        
+
+        </div>
+      </div>
+    
+    </main>
+
+    <script src="https://kit.fontawesome.com/b22286fea9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
