@@ -244,9 +244,7 @@ function detailsElementsHTML(){
             <div class="modal_image">
               <img src="${product.image}">
             </div>
-            <div class="btn">
-          <button class="modal__button modal__to__car" id="modal__to__car" data-id="${products[i].id}">Add to car</button> 
-        </div>
+            
           </div>
     `
     ;
