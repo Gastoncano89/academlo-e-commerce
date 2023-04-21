@@ -241,7 +241,7 @@ main h3 {
 }
 
 .modal_descript h2{
-  font-size: 15px;
+  font-size: 20px;
   color: #434343;
 }
 
@@ -274,6 +274,91 @@ main h3 {
   font-size: 1em;
   font-weight: 500;
   color: #fff;
+  transition: 0.5s;
+}
+.modal__button:hover{
+  transform: translateY(-3px);
+}
+
+/* COLORES */
+
+.first__modal__colors p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.first__modal__colors div {
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 40px;
+  
+}
+.first__modal__colors div:hover {
+  border: solid 1px #274671;
+}
+
+.first__modal__colors div img {
+  width: 100px;
+}
+
+.first__modal__colors div {
+  margin-bottom: 10px;
+}
+/* TALLAS */
+
+.first__modal__sizes__text div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.first__modal__sizes__text div p:first-child {
+  margin: 2px 1em 0 0;
+  font-size: 18px;
+}
+.first__modal__sizes__text div p:last-child {
+  margin: 2px 0 0 0;
+  font-size: 14px;
+  color: #434343;
+}
+
+ /* LEtras talles */
+ .first__modal__sizes {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.first__modal__sizes div {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-bottom: 40px;
+}
+.first__modal__sizes div:hover {
+  border: solid 1px #274671;
+  background-color: #eb4a5a;
+   transform: scale(1.1);
+}
+
+.first__modal__sizes div p {
+  font-size: 10px;
+  color: #434343;
+}
+
+.first__modal__sizes__text {
+  max-width: 100%;
+}
+
+
+.first__modal__sizes__text div {
+  margin-bottom: 10px;
 }
 
 
@@ -284,4 +369,27 @@ main h3 {
   .nav__car__visible {
     left: 30%;
   }
+  .first__modal__sizes__text {
+    max-width: 100%;
+  }
+  .first__modal__sizes {
+    max-width: 100%;
+  }
+
 }
+
+
+
+@media screen and (max-width: 992px){
+  .first__modal__sizes__text {
+    max-width: 300px;
+  }
+  .first__modal__sizes {
+    max-width: 300px;
+    gap: 20px;
+  }
+  .first__modal__sizes div {
+    margin-bottom: 10px;
+  }
+}
+

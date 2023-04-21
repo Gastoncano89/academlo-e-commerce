@@ -238,14 +238,52 @@ function detailsElementsHTML(){
                 <h2>${product.name}</h2>
                 
                 <p>${product.price}</p>
-                
+
+                <div class="first__modal__colors">
+                    <p>Colores</p>
+                    <div>
+                      <img src="${product.image}">
+                    </div>
+                  </div>
+
+                  <div class="first__modal__sizes__text">
+                    <div>
+                      <p>Tallas</p>
+                      <p>Guía de tallas</p>
+                    </div>
+                  </div>  
+
+                  <div class="first__modal__sizes">
+                      <div>
+                          <p>S</p>
+                      </div>
+                      <div>
+                         <p>M</p>
+                      </div>
+                      <div>
+                          <p>L</p>
+                      </div>
+                      <div>
+                          <p>XL</p>
+                      </div>
+                      <div>
+                          <p>2XL</p>
+                      </div>
+                      <div>
+                          <p>3XL</p>
+                      </div>
+                  </div>
             </div>
 
             <div class="modal_image">
               <img src="${product.image}">
             </div>
+
             
-          </div>
+    </div>
+    <div>
+                <button class="modal__button modal__to__car" id="modal__to__car" data-id="1">Add to car</button> 
+    </div>
     `
     ;
     // appendChild permite insertar elementos al DOM, muy similar a innerHTML
